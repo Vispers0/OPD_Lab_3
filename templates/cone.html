@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объём конуса</title>
+</head>
+<body>
+    <form action="cone" method="post">
+        <p>
+            Введите радиус конуса :
+            <input type="number" name="rad">
+        </p>
+        <p>
+            Введите высоту конуса:
+            <input type="number" name="height">
+        </p>
+        <p>
+            Введите точность вычислений:
+            <input type="number" name="precision">
+            знаков после запятой
+        </p>
+        <p>
+            <button onclick="submit();">Вычислить!</button>
+        </p>
+    </form>
+    <p>
+        {{square}}
+    </p>
+    <form action="/" method="get">
+        <button onclick="submit();">Назад</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объём правильного тетраэдра</title>
+</head>
+<body>
+    <form action="tetra" method="post">
+        <p>
+            Введите длину ребра правильного тетраэдра:
+            <input type="number" name="side">
+        </p>
+        <p>
+            Введите точность вычислений:
+            <input type="number" name="precision">
+            знаков после запятой
+        </p>
+        <p>
+            <button onclick="submit();">Вычислить!</button>
+        </p>
+    </form>
+    <p>
+        {{square}}
+    </p>
+    <form action="/" method="get">
+        <button onclick="submit();">Назад</button>
+    </form>
+</body>
+</html>

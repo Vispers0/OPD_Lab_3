@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объём параллелепипеда</title>
+</head>
+<body>
+    <form action="parallel" method="post">
+        <p>
+            Введите площадь основания параллелепипеда:
+            <input type="number" name="base_sq">
+        </p>
+        <p>
+            Введите высоту параллелепипеда:
+            <input type="number" name="height">
+        </p>
+        <p>
+            Введите точность вычислений:
+            <input type="number" name="precision">
+            знаков после запятой
+        </p>
+        <p>
+            <button onclick="submit();">Вычислить!</button>
+        </p>
+    </form>
+    <p>
+        {{square}}
+    </p>
+    <form action="/" method="get">
+        <button onclick="submit();">Назад</button>
+    </form>
+</body>
+</html>

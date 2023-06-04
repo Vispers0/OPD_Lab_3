@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объём прямоугольного параллелепипеда</title>
+</head>
+<body>
+    <form action="rect_parallel" method="post">
+        <p>
+            Введите длину прямоугольного параллелепипеда:
+            <input type="number" name="length">
+        </p>
+        <p>
+            Введите ширину прямоугольного параллелепипеда:
+            <input type="number" name="width">
+        </p>
+        <p>
+            Введите высоту прямоугольного параллелепипеда:
+            <input type="number" name="height">
+        </p>
+        <p>
+            Введите точность вычислений:
+            <input type="number" name="precision">
+            знаков после запятой
+        </p>
+        <p>
+            <button onclick="submit();">Вычислить!</button>
+        </p>
+    </form>
+    <p>
+        {{square}}
+    </p>
+    <form action="/" method="get">
+        <button onclick="submit();">Назад</button>
+    </form>
+</body>
+</html>
