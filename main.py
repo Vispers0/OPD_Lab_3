@@ -1,4 +1,5 @@
 import math
+from math import pi
 
 from flask import Flask, render_template, request
 
@@ -99,7 +100,7 @@ def cylinder():
     height = float(request.form.get('height'))
     precision = int(request.form.get('precision'))
 
-    sq = round(3.14 * rad ** 2 * height, precision)
+    sq = round(pi * rad ** 2 * height, precision)
     return render_template('cylinder.html', square="Объём цилиндра = " + str(sq))
 
 
@@ -109,7 +110,7 @@ def cone():
     height = float(request.form.get('height'))
     precision = int(request.form.get('precision'))
 
-    sq = round((1/3) * 3.14 * rad ** 2 * height, precision)
+    sq = round((1/3) * pi * rad ** 2 * height, precision)
     return render_template('cone.html', square="Объём конуса = " + str(sq))
 
 
@@ -118,7 +119,7 @@ def ball():
     rad = float(request.form.get('rad'))
     precision = int(request.form.get('precision'))
 
-    sq = round((4/3) * 3.14 * rad ** 3, precision)
+    sq = round((4/3) * pi * rad ** 3, precision)
     return render_template('ball.html', square="Объём шара = " + str(sq))
 
 
